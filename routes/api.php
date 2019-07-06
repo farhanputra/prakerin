@@ -21,4 +21,5 @@ Route::resource('/siswa', 'SiswaController');
 
 Route::resource('/sekolah', 'ControllerSekolah');
 
+Route::resource('/artikel', 'ArtikelController');
 

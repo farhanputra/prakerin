@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateEkonomisTable extends Migration
+class CreateTagsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class CreateEkonomisTable extends Migration
      */
     public function up()
     {
-        Schema::create('ekonomis', function (Blueprint $table) {
+        Schema::create('tags', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nama_tag');
+            $table->string('slug');
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *
@@ -26,6 +27,6 @@ class CreateEkonomisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ekonomis');
+        Schema::dropIfExists('tags');
     }
 }

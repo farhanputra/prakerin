@@ -17,10 +17,24 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+Route::get('/admin', function () {
+    return view('welcome');
+});
 Route::get('/blog', function () {
     return view('blog');
 });
-
+Route::get('/event', function () {
+    return view('event');
+});
+Route::get('/travel', function () {
+    return view('travel');
+});
+Route::get('/single', function () {
+    return view('single');
+});
+Route::get('/contact', function () {
+    return view('contact');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

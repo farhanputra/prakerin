@@ -67,14 +67,14 @@
 						</div>
 						<div class="col-xs-10 text-right menu-1">
 							<ul>
-								<li><a href="{{('/')}}">Home</a></li>
+									<li class="active"><a href="{{url('/')}}">Home</a></li>
 								<li class="has-dropdown">
 									<a href="{{('blog')}}">Blog</a>
 									<ul class="dropdown">
 										<li><a href="{{('single')}}">Blog Single</a></li>
 									</ul>
 								</li>
-								<li class="active"><a href="{{('about')}}">About Me</a></li>
+								<li><a href="{{('about')}}">About Me</a></li>
 								<li><a href="{{('contact')}}">Contact</a></li>
 							</ul>
 						</div>
@@ -87,8 +87,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 breadcrumbs text-center">
-						<h2>About Me</h2>
-						<p><span><a href="index.html">Home</a></span> / <span>About</span></p>
+						<h2>Contact us</h2>
+						<p><span><a href="index.html">Home</a></span> / <span>Contact</span></p>
 					</div>
 				</div>
 			</div>
@@ -97,28 +97,73 @@
 		<div id="colorlib-container">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
-						<img class="img-responsive" src="{{asset('assets/frontend/images/author.jpg')}}" alt="">
+					<div class="col-md-12">
+						<h2 class="heading-2">Contact Information</h2>
+						<div class="row contact-info-wrap row-pb-lg">
+							<div class="col-md-3">
+								<p><span><i class="icon-location-2"></i></span> 198 West 21th Street, <br> Suite 721 New York NY 10016</p>
+							</div>
+							<div class="col-md-3">
+								<p><span><i class="icon-phone3"></i></span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+							</div>
+							<div class="col-md-3">
+								<p><span><i class="icon-paperplane"></i></span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+							</div>
+							<div class="col-md-3">
+								<p><span><i class="icon-globe"></i></span> <a href="#">yourwebsite.com</a></p>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-6">
-						<p>Hi! My Name is <strong>Farhan</strong> Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-						<blockquote>
-							A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-						</blockquote>
-						<p class="first-letra">Far far away, <strong><a href="#">behind the word mountains</a></strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-						<p>
-							<ul class="colorlib-social-icons">
-								<li><a href="#"><i class="icon-twitter"></i></a></li>
-								<li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-linkedin"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							</ul>
-						</p>
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-6">
+								<div id="map" class="colorlib-map"></div>
+							</div>
+							<div class="col-md-6">
+								<h2 class="heading-2">Get In Touch</h2>
+								<form action="#">
+									<div class="row form-group">
+										<div class="col-md-6">
+											<label for="fname">First Name</label>
+											<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+										</div>
+										<div class="col-md-6">
+											<label for="lname">Last Name</label>
+											<input type="text" id="lname" class="form-control" placeholder="Your lastname">
+										</div>
+									</div>
+
+									<div class="row form-group">
+										<div class="col-md-12">
+											<label for="email">Email</label>
+											<input type="text" id="email" class="form-control" placeholder="Your email address">
+										</div>
+									</div>
+
+									<div class="row form-group">
+										<div class="col-md-12">
+											<label for="subject">Subject</label>
+											<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+										</div>
+									</div>
+
+									<div class="row form-group">
+										<div class="col-md-12">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+										</div>
+									</div>
+									<div class="form-group">
+										<input type="submit" value="Send Message" class="btn btn-primary">
+									</div>
+
+								</form>	
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
 		<div id="colorlib-instagram">
 			<div class="row">
 				<div class="col-md-12 col-md-offset-0 colorlib-heading text-center">
@@ -166,7 +211,7 @@
 					<div class="col-md-3">
 						<h2>Recent Post</h2>
 						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url({{asset('assets/frontend/images/blog-1.jpg')}};">
+							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);">
 							</a>
 							<div class="desc">
 								<h3><a href="blog.html">Be a designer</a></h3>
@@ -174,7 +219,7 @@
 							</div>
 						</div>
 						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url({{asset('assets/frontend/images/blog-2.jpg')}};">
+							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-2.jpg);">
 							</a>
 							<div class="desc">
 								<h3><a href="blog.html">How to build website</a></h3>
@@ -182,7 +227,7 @@
 							</div>
 						</div>
 						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url({{asset('assets/frontend/images/blog-3.jpg')}};">
+							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-3.jpg);">
 							</a>
 							<div class="desc">
 								<h3><a href="blog.html">Create website</a></h3>
@@ -261,6 +306,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<!-- Magnific Popup -->
 	<script src="{{asset('assets/frontend/js/jquery.magnific-popup.min.js')}}"></script>
 	<script src="{{asset('assets/frontend/js/magnific-popup-options.js')}}"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="{{asset('assets/frontend/js/google_map.js')}}"></script>
 	<!-- Main -->
 	<script src="{{asset('assets/frontend/js/main.js')}}"></script>
 

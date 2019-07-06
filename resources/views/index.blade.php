@@ -60,24 +60,19 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-2">
-							<div id="colorlib-logo"><a href="index.html">Stuff</a></div>
+							<div id="colorlib-logo"><a href="/index">Farhan</a></div>
 						</div>
 						<div class="col-xs-10 text-right menu-1">
 							<ul>
-								<li class="active"><a href="index.html">Home</a></li>
+								<li class="active"><a href="{{url('/')}}">Home</a></li>
 								<li class="has-dropdown">
-									<a href="blog.html">Blog</a>
+									<a href="{{('blog')}}">Blog</a>
 									<ul class="dropdown">
-										<li><a href="single.html">Blog Single</a></li>
-										<li><a href="#">Video</a></li>
-										<li><a href="#">Read</a></li>
-										<li><a href="#">Lifestyle</a></li>
+										<li><a href="{{('single')}}">Blog Single</a></li>
 									</ul>
 								</li>
-								<li><a href="event.html">Event</a></li>
-								<li><a href="travel.html">Travel</a></li>
-								<li><a href="about.html">About Me</a></li>
-								<li><a href="contact.html">Contact</a></li>
+								<li><a href="{{('about')}}">About Me</a></li>
+								<li><a href="{{('contact')}}">Contact</a></li>
 							</ul>
 						</div>
 					</div>
@@ -173,32 +168,31 @@
 					<div class="col-md-4">
 						<div class="blog-entry">
 							<div class="blog-img">
-								<a href="blog.html"><img src="{{asset('assets/frontend/images/blog-1.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
+								<a href="blog"><img src="{{asset('assets/frontend/images/sr.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
 							</div>
 							<div class="desc">
 								<p class="meta">
-									<span class="cat"><a href="#">Events</a></span>
-									<span class="date">20 March 2018</span>
-									<span class="pos">By <a href="#">Rich</a></span>
-								</p>
-								<h2><a href="blog.html">Recipe for your site</a></h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary </p>
+									<span class="cat"><a href="#">Read</a></span>
+									<span class="date">06 July 2019</span>
+                  <span class="pos">By <a href="#">Farhan</a></span>
+                </p>
+								<h2><a href="single">Sergio Ramos</a></h2>
+					
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="blog-entry">
 							<div class="blog-img">
-								<a href="blog.html"><img src="{{asset('assets/frontend/images/blog-2.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
+								<a href="blog"><img src="{{asset('assets/frontend/images/bob.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
 							</div>
 							<div class="desc">
 								<p class="meta">
 									<span class="cat"><a href="#">Read</a></span>
-									<span class="date">20 March 2018</span>
-									<span class="pos">By <a href="#">Rich</a></span>
+									<span class="date">06 July 2019</span>
+									<span class="pos">By <a href="#">Farhan</a></span>
 								</p>
-								<h2><a href="blog.html">Recipe for your site</a></h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary </p>
+								<h2><a href="blog">Roberto Firmino</a></h2>
 							</div>
 						</div>
 					</div>
@@ -207,21 +201,20 @@
 							<div class="blog-slider">
 								<div class="owl-carousel">
 									<div class="item">
-										<a href="blog.html" class="image-popup-link"><img src="{{asset('assets/frontend/images/blog-3.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
+										<a href="blog" class="image-popup-link"><img src="{{asset('assets/frontend/images/ha.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
 									</div>
 									<div class="item">
-										<a href="blog.html" class="image-popup-link"><img src="{{asset('assets/frontend/images/blog-4.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
+										<a href="blog" class="image-popup-link"><img src="{{asset('assets/frontend/images/blog-4.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
 									</div>
 								</div>
 							</div>
 							<div class="desc">
 								<p class="meta">
 									<span class="cat"><a href="#">Travel</a></span>
-									<span class="date">20 March 2018</span>
-									<span class="pos">By <a href="#">Rich</a></span>
+								<span class="date">06 July 2019</span>
+									<span class="pos">By <a href="#">Farhan</a></span>
 								</p>
-								<h2><a href="blog.html">Recipe for your site</a></h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary </p>
+								<h2><a href="blog">Eden Hazard</a></h2>
 							</div>
 						</div>
 					</div>
@@ -230,48 +223,45 @@
 					<div class="col-md-4">
 						<div class="blog-entry">
 							<div class="blog-img">
-								<a href="blog.html"><img src="{{asset('assets/frontend/images/blog-4.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
+								<a href="blog"><img src="{{asset('assets/frontend/images/mes.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
 							</div>
 							<div class="desc">
 								<p class="meta">
 									<span class="cat"><a href="#">Lifestyle</a></span>
-									<span class="date">20 March 2018</span>
-									<span class="pos">By <a href="#">Rich</a></span>
+										<span class="date">06 July 2019</span>
+									<span class="pos">By <a href="#">Farhan</a></span>
 								</p>
-								<h2><a href="blog.html">Recipe for your site</a></h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary </p>
+								<h2><a href="blog">Lionel Messi</a></h2>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="blog-entry">
 							<div class="blog-img">
-								<a href="blog.html"><img src="{{asset('assets/frontend/images/blog-5.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
+								<a href="blog"><img src="{{asset('assets/frontend/images/o.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
 							</div>
 							<div class="desc">
 								<p class="meta">
 									<span class="cat"><a href="#">Events</a></span>
-									<span class="date">20 March 2018</span>
+										<span class="date">06 July 2019</span>
 									<span class="pos">By <a href="#">Rich</a></span>
 								</p>
-								<h2><a href="blog.html">Recipe for your site</a></h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary </p>
+								<h2><a href="blog">Cristiano Ronaldo</a></h2>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="blog-entry">
 							<div class="blog-img">
-								<a href="blog.html"><img src="{{asset('assets/frontend/images/blog-6.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
+								<a href="blog"><img src="{{asset('assets/frontend/images/ney.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
 							</div>
 							<div class="desc">
 								<p class="meta">
 									<span class="cat"><a href="#">Events</a></span>
-									<span class="date">20 March 2018</span>
+										<span class="date">06 July 2019</span>
 									<span class="pos">By <a href="#">Rich</a></span>
 								</p>
-								<h2><a href="blog.html">Recipe for your site</a></h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary </p>
+								<h2><a href="blog">Neymar Jr</a></h2>
 							</div>
 						</div>
 					</div>
@@ -291,7 +281,7 @@
 									<span class="date">20 March 2018</span>
 									<span class="pos">By <a href="#">Rich</a></span>
 								</p>
-								<h2><a href="blog.html">Watch our video how to make website</a></h2>
+								<h2><a href="blog">Watch our video how to make website</a></h2>
 								<p>A small river named Duden flows by their place and supplies it with the necessary </p>
 							</div>
 						</div>
@@ -299,7 +289,7 @@
 					<div class="col-md-4">
 						<div class="blog-entry">
 							<div class="blog-img">
-								<a href="blog.html"><img src="{{asset('assets/frontend/images/blog-7.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
+								<a href="blog"><img src="{{asset('assets/frontend/images/blog-7.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
 							</div>
 							<div class="desc">
 								<p class="meta">
@@ -307,57 +297,7 @@
 									<span class="date">20 March 2018</span>
 									<span class="pos">By <a href="#">Rich</a></span>
 								</p>
-								<h2><a href="blog.html">Recipe for your site</a></h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary </p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row row-pb-md">
-					<div class="col-md-4">
-						<div class="blog-entry">
-							<div class="blog-img">
-								<a href="blog.html"><img src="{{asset('assets/frontend/images/blog-9.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
-							</div>
-							<div class="desc">
-								<p class="meta">
-									<span class="cat"><a href="#">Events</a></span>
-									<span class="date">20 March 2018</span>
-									<span class="pos">By <a href="#">Rich</a></span>
-								</p>
-								<h2><a href="blog.html">Recipe for your site</a></h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="blog-entry">
-							<div class="blog-img">
-								<a href="blog.html"><img src="{{asset('assets/frontend/images/blog-10.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
-							</div>
-							<div class="desc">
-								<p class="meta">
-									<span class="cat"><a href="#">Events</a></span>
-									<span class="date">20 March 2018</span>
-									<span class="pos">By <a href="#">Rich</a></span>
-								</p>
-								<h2><a href="blog.html">Recipe for your site</a></h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="blog-entry">
-							<div class="blog-img">
-								<a href="blog.html"><img src="{{asset('assets/frontend/images/blog-11.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
-							</div>
-							<div class="desc">
-								<p class="meta">
-									<span class="cat"><a href="#">Events</a></span>
-									<span class="date">20 March 2018</span>
-									<span class="pos">By <a href="#">Rich</a></span>
-								</p>
-								<h2><a href="blog.html">Recipe for your site</a></h2>
+								<h2><a href="blog">Recipe for your site</a></h2>
 								<p>A small river named Duden flows by their place and supplies it with the necessary </p>
 							</div>
 						</div>
@@ -367,7 +307,7 @@
 					<div class="col-md-4">
 						<div class="blog-entry">
 							<div class="blog-img">
-								<a href="blog.html"><img src="{{asset('assets/frontend/images/blog-12.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
+								<a href="blog"><img src="{{asset('assets/frontend/images/blog-9.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
 							</div>
 							<div class="desc">
 								<p class="meta">
@@ -375,7 +315,57 @@
 									<span class="date">20 March 2018</span>
 									<span class="pos">By <a href="#">Rich</a></span>
 								</p>
-								<h2><a href="blog.html">Recipe for your site</a></h2>
+								<h2><a href="blog">Recipe for your site</a></h2>
+								<p>A small river named Duden flows by their place and supplies it with the necessary </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="blog-entry">
+							<div class="blog-img">
+								<a href="blog"><img src="{{asset('assets/frontend/images/blog-10.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
+							</div>
+							<div class="desc">
+								<p class="meta">
+									<span class="cat"><a href="#">Events</a></span>
+									<span class="date">20 March 2018</span>
+									<span class="pos">By <a href="#">Rich</a></span>
+								</p>
+								<h2><a href="blog">Recipe for your site</a></h2>
+								<p>A small river named Duden flows by their place and supplies it with the necessary </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="blog-entry">
+							<div class="blog-img">
+								<a href="blog"><img src="{{asset('assets/frontend/images/blog-11.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
+							</div>
+							<div class="desc">
+								<p class="meta">
+									<span class="cat"><a href="#">Events</a></span>
+									<span class="date">20 March 2018</span>
+									<span class="pos">By <a href="#">Rich</a></span>
+								</p>
+								<h2><a href="blog">Recipe for your site</a></h2>
+								<p>A small river named Duden flows by their place and supplies it with the necessary </p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-pb-md">
+					<div class="col-md-4">
+						<div class="blog-entry">
+							<div class="blog-img">
+								<a href="blog"><img src="{{asset('assets/frontend/images/blog-12.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
+							</div>
+							<div class="desc">
+								<p class="meta">
+									<span class="cat"><a href="#">Events</a></span>
+									<span class="date">20 March 2018</span>
+									<span class="pos">By <a href="#">Rich</a></span>
+								</p>
+								<h2><a href="blog">Recipe for your site</a></h2>
 								<p>A small river named Duden flows by their place and supplies it with the necessary </p>
 							</div>
 						</div>
@@ -383,7 +373,7 @@
 					<div class="col-md-8">
 						<div class="blog-entry">
 							<div class="blog-img">
-								<a href="blog.html"><img src="{{asset('assets/frontend/images/blog-13.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
+								<a href="blog"><img src="{{asset('assets/frontend/images/blog-13.jpg')}}" class="img-responsive" alt="html5 bootstrap template"></a>
 							</div>
 							<div class="desc">
 								<p class="meta">
@@ -391,7 +381,7 @@
 									<span class="date">20 March 2018</span>
 									<span class="pos">By <a href="#">Rich</a></span>
 								</p>
-								<h2><a href="blog.html">Recipe for your site</a></h2>
+								<h2><a href="blog">Recipe for your site</a></h2>
 								<p>A small river named Duden flows by their place and supplies it with the necessary </p>
 							</div>
 						</div>
@@ -459,26 +449,26 @@
 					<div class="col-md-3">
 						<h2>Recent Post</h2>
 						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url({{ asset('assets/frontend/images/blog-1.jpg')}}>
+							<a href="blog" class="blog-img" style="background-image: url({{ asset('assets/frontend/images/blog-1.jpg')}}>
 							</a>
 							<div class="desc">
-								<h3><a href="blog.html">Be a designer</a></h3>
+								<h3><a href="blog">Be a designer</a></h3>
 								<p class="admin"><span>25 March 2018</span></p>
 							</div>
 						</div>
 						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url({{ asset('assets/frontend/images/blog-2.jpg')}}>
+							<a href="blog" class="blog-img" style="background-image: url({{ asset('assets/frontend/images/blog-2.jpg')}}>
 							</a>
 							<div class="desc">
-								<h3><a href="blog.html">How to build website</a></h3>
+								<h3><a href="blog">How to build website</a></h3>
 								<p class="admin"><span>24 March 2018</span></p>
 							</div>
 						</div>
 						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url({{ asset('assets/frontend/images/blog-3.jpg')}}>
+							<a href="blog" class="blog-img" style="background-image: url({{ asset('assets/frontend/images/blog-3.jpg')}}>
 							</a>
 							<div class="desc">
-								<h3><a href="blog.html">Create website</a></h3>
+								<h3><a href="blog">Create website</a></h3>
 								<p class="admin"><span>23 March 2018</span></p>
 							</div>
 						</div>
