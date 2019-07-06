@@ -161,7 +161,7 @@
 								<li><a href="{{asset('assets/frontend/#')}}'"><i class="icon-check"></i> Home</a></li>
 								<li><a href="{{asset('assets/frontend/#')}}'"><i class="icon-check"></i> About Me</a></li>
 								<li><a href="{{asset('assets/frontend/#')}}'"><i class="icon-check"></i> Blog</a></li>
-								<li><a href="{{asset('assets/frontend/#')}}'"><i class="icon-check"></i> Travel</a></li>
+								<li><a href="#"><i class="icon-check"></i> Travel</a></li>
 								<li><a href="{{asset('assets/frontend/#')}}'"><i class="icon-check"></i> Lifestyle</a></li>
 								<li><a href="{{asset('assets/frontend/#')}}'"><i class="icon-check"></i> Fashion</a></li>
 								<li><a href="{{asset('assets/frontend/#')}}'"><i class="icon-check"></i> Health</a></li>

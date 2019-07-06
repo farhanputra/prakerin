@@ -20,7 +20,7 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 	
-	<link href="{{asset('assets/frontend/https://fonts.googleapis.com/css?family=Roboto:300,400,700')}}" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700'" rel="stylesheet">
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="{{asset('assets/frontend/css/animate.css')}}">
@@ -87,7 +87,7 @@
 		<aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
-			   	<li style="{{asset('assets/fronrend/background-image: url(images/img_bg_1.jpg);')}}">
+			   	<li style="background-image: url({{ asset('assets/frontend/images/img_bg_1.jpg') }} )">
 			   		<div class="overlay"></div>
 			   		<div class="container">
 			   			<div class="row">
@@ -106,7 +106,7 @@
 				   		</div>
 			   		</div>
 			   	</li>
-			   	<li style="{{asset('assets/fronrend/background-image: url(images/img_bg_2.jpg);')}}">
+			   	<li style="background-image: url({{ asset('assets/frontend/images/img_bg_2.jpg')}}">
 			   		<div class="overlay"></div>
 			   		<div class="container">
 			   			<div class="row">
@@ -125,7 +125,7 @@
 				   		</div>
 			   		</div>
 			   	</li>
-			   	<li style="{{asset('assets/fronrend/background-image: url(images/img_bg_3.jpg);')}}">
+			   	<li style="background-image: url({{ asset('assets/frontend/images/img_bg_3.jpg')}}">
 			   		<div class="overlay"></div>
 			   		<div class="container">
 			   			<div class="row">
@@ -144,7 +144,7 @@
 				   		</div>
 			   		</div>
 			   	</li>
-			   	<li style="{{asset('assets/fronrend/background-image: url(images/img_bg_4.jpg);')}}">
+			   	<li style="background-image: url({{ asset('assets/frontend/images/img_bg_4.jpg')}}">
 			   		<div class="overlay"></div>
 			   		<div class="container">
 			   			<div class="row">
@@ -280,7 +280,7 @@
 					<div class="col-md-8">
 						<div class="blog-entry">
 							<div class="blog-img">
-								<div class="video colorlib-video" style="background-image: url(images/blog-8.jpg);">
+								<div class="video colorlib-video" style="background-image: url({{ asset('assets/frontend/images/blog-8.jpg')}}">
 									<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-play"></i></a>
 									<div class="overlay"></div>
 								</div>
@@ -420,21 +420,21 @@
 			</div>
 			<div class="row">
 				<div class="instagram-entry">
-					<a href="#" class="instagram text-center" style="background-image: url(images/gallery-1.jpg);">
+					<a href="#" class="instagram text-center" style="background-image: url({{asset('assets/frontend/images/gallery-1.jpg')}}">
 					</a>
-					<a href="#" class="instagram text-center" style="background-image: url(images/gallery-2.jpg);">
+					<a href="#" class="instagram text-center" style="background-image: url({{asset('assets/frontend/images/gallery-2.jpg')}}>
 					</a>
-					<a href="#" class="instagram text-center" style="background-image: url(images/gallery-3.jpg);">
+					<a href="#" class="instagram text-center" style="background-image: url({{asset('assets/frontend/images/gallery-3.jpg')}}>
 					</a>
-					<a href="#" class="instagram text-center" style="background-image: url(images/gallery-4.jpg);">
+					<a href="#" class="instagram text-center" style="background-image: url({{asset('assets/frontend/images/gallery-4.jpg')}}>
 					</a>
-					<a href="#" class="instagram text-center" style="background-image: url(images/gallery-5.jpg);">
+					<a href="#" class="instagram text-center" style="background-image: url({{asset('assets/frontend/images/gallery-5.jpg')}}>
 					</a>
-					<a href="#" class="instagram text-center" style="background-image: url(images/gallery-6.jpg);">
+					<a href="#" class="instagram text-center" style="background-image: url({{asset('assets/frontend/images/gallery-6.jpg')}}>
 					</a>
-					<a href="#" class="instagram text-center" style="background-image: url(images/gallery-7.jpg);">
+					<a href="#" class="instagram text-center" style="background-image: url({{asset('assets/frontend/images/gallery-7.jpg')}}>
 					</a>
-					<a href="#" class="instagram text-center" style="background-image: url(images/gallery-8.jpg);">
+					<a href="#" class="instagram text-center" style="background-image: url({{asset('assets/frontend/images/gallery-8.jpg')}}>
 					</a>
 				</div>
 			</div>
@@ -446,7 +446,7 @@
 						<h2>Navigational</h2>
 						<p>
 							<ul class="colorlib-footer-links">
-								<li><a href="#"><i class="icon-check"></i> Home</a></li>
+								<li><a href="{{asset('assets/frontend/#')}}'"><i class="icon-check"></i> Home</a></li>
 								<li><a href="#"><i class="icon-check"></i> About Me</a></li>
 								<li><a href="#"><i class="icon-check"></i> Blog</a></li>
 								<li><a href="#"><i class="icon-check"></i> Travel</a></li>
@@ -459,7 +459,7 @@
 					<div class="col-md-3">
 						<h2>Recent Post</h2>
 						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);">
+							<a href="blog.html" class="blog-img" style="background-image: url({{ asset('assets/frontend/images/blog-1.jpg')}}>
 							</a>
 							<div class="desc">
 								<h3><a href="blog.html">Be a designer</a></h3>
@@ -467,7 +467,7 @@
 							</div>
 						</div>
 						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-2.jpg);">
+							<a href="blog.html" class="blog-img" style="background-image: url({{ asset('assets/frontend/images/blog-2.jpg')}}>
 							</a>
 							<div class="desc">
 								<h3><a href="blog.html">How to build website</a></h3>
@@ -475,7 +475,7 @@
 							</div>
 						</div>
 						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-3.jpg);">
+							<a href="blog.html" class="blog-img" style="background-image: url({{ asset('assets/frontend/images/blog-3.jpg')}}>
 							</a>
 							<div class="desc">
 								<h3><a href="blog.html">Create website</a></h3>
@@ -542,20 +542,20 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<!-- jQuery -->
 	<script src="{{asset('assets/frontend/js/jquery.min.js')}}"></script>
 	<!-- jQuery Easing -->
-	<script src="{{asset('assets/frontend/js/jquery.easing')}}.1.3.js')}}"></script>
+	<script src="{{asset('assets/frontend/js/jquery.easing.1.3.js')}}"></script>
 	<!-- Bootstrap -->
-	<script src="{{asset('assets/frontend/js/bootstrap.min')}}.js')}}"></script>
+	<script src="{{asset('assets/frontend/js/bootstrap.min.js')}}"></script>
 	<!-- Waypoints -->
-	<script src="{{asset('assets/frontend/js/jquery.waypoi')}}nts.min.js')}}"></script>
+	<script src="{{asset('assets/frontend/js/jquery.waypoints.min.js')}}"></script>
 	<!-- Flexslider -->
-	<script src="{{asset('assets/frontend/js/jquery.flexsl')}}ider-min.js')}}"></script>
+	<script src="{{asset('assets/frontend/js/jquery.flexslider-min.js')}}"></script>
 	<!-- Owl carousel -->
-	<script src="{{asset('assets/frontend/js/owl.carousel.')}}min.js')}}"></script>
+	<script src="{{asset('assets/frontend/js/owl.carousel.min.js')}}"></script>
 	<!-- Magnific Popup -->
-	<script src="{{asset('assets/frontend/js/jquery.magnif')}}ic-popup.min.js')}}"></script>
-	<script src="{{asset('assets/frontend/js/magnific-popu')}}p-options.js')}}"></script>
+	<script src="{{asset('assets/frontend/js/jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{asset('assets/frontend/js/magnific-popup-options.js')}}"></script>
 	<!-- Main -->
-	<script src="{{asset('assets/frontend/js/main.js')}}"></sc')}}ript>
+	<script src="{{asset('assets/frontend/js/main.js')}}"></script>
 
 	</body>
 </html>
