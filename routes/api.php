@@ -17,9 +17,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('/siswa', 'SiswaController');
+Route::group(['middleware' => 'cors'], function ( ) { 
+    
+Route::get('/siswa', 'Api/SiswaController');
+Route::get('/sekolah', 'Api/ControllerSekolah');
+Route::get('/artikel', 'Api/ArtikelController');
+});
 
-Route::resource('/sekolah', 'ControllerSekolah');
 
-Route::resource('/artikel', 'ArtikelController');
+
 

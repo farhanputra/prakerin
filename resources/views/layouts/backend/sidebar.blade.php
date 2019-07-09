@@ -9,7 +9,7 @@
 									<svg id="logo" width="25" height="25" viewBox="0 0 54.03 56.55">
 										<defs>
 										<linearGradient id="logo_background_color">
-											<img src="{{asset('assets/img/artikel/VGoI3b_cc.png')}}" class="float-left" style="width:25px; height:25px;" alt="">
+											<img src="{{asset('assets/backend/img/artikel/VGoI3b_cc.png')}}" class="float-left" style="width:25px; height:25px;" alt="">
 											<stop class="stop1" offset="0%"/>
 											<stop class="stop2" offset="50%"/>
 											<stop class="stop3" offset="100%"/>

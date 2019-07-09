@@ -22,25 +22,13 @@ Route::get('/admin', function () {
 });
 Route::get('/blog', function () {
     return view('blog');
-});
-Route::get('/event', function () {
-    return view('event');
-});
-Route::get('/travel', function () {
-    return view('travel');
+
 });
 Route::get('/single', function () {
     return view('single');
 });
 Route::get('/contact', function () {
     return view('contact');
-});
-
-Route::get('/artikel', function () {
-    return view('backend/artikel');
-});
-Route::get('/kategori', function () {
-    return view('backend/kategori');
 });
 
 Route::get('/siswa', function () {
