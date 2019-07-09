@@ -33,9 +33,9 @@
                     </a>
                     <a class="navbar-brand" href="{{ url('artikel') }}">
                         Artikel
-                    </a><a class="navbar-brand" href="{{ url('/') }}">
+                    </a><a class="navbar-brand" href="{{ url('/kategori') }}">
                         Kategori
-                    </a><a class="navbar-brand" href="{{ url('/') }}">
+                    </a><a class="navbar-brand" href="{{ url('/tag') }}">
                         Tag
                     </a>
                 </div>

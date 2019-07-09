@@ -35,7 +35,19 @@ Route::get('/single', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/artikel', function () {
+    return view('backend/artikel');
+});
+Route::get('/kategori', function () {
+    return view('backend/kategori');
+});
+
+Route::get('/siswa', function () {
+    return view('siswa');
+});
 Auth::routes();
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -43,3 +55,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::resource('artikel','ArtikelController');
+Route::resource('kategori','KategoriController');
+route::resource('tag','TagController');

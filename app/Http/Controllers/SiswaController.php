@@ -13,11 +13,11 @@ class SiswaController extends Controller
      */
     public function index()
     {
-        $siswa =  Siswa::all();
+        $siswa = Siswa::all();
         $response = [
             'success' => true,
-            'data' => $siswa,
-            'message' => 'berhasil'
+            'data' =>  $siswa,
+            'message' => 'Berhasil ditampilkan.'
         ];
         return response()->json($response, 200);
     }
@@ -41,20 +41,16 @@ class SiswaController extends Controller
     public function store(Request $request)
     {
         {
-        $siswa = new Siswa();
-        $siswa->siswa =$request->siswa;
-        $siswa->guru = $request->guru;
-        $siswa->wali_kelas = $request->wali_kelas;
-        $siswa->kepala_sekolah = $request->kepala_sekolah;
-
+        $$siswa = new Siswa();
+        $siswa->nama = $request->namasiswa;
         $siswa->save();
         $response = [
-            'succes' => true,
-            'data' => $siswa,
-            'message' => 'berhasil'
+            'success' => true,
+            'data' =>  $siswa,
+            'message' => 'Berhasil ditambahkan.'
         ];
         return response()->json($response, 200);
-        }
+    }
 
     }
 
@@ -66,12 +62,7 @@ class SiswaController extends Controller
      */
     public function show($id)
     {
-        $siswa = Siswa::findOrFail($id);
-        $response = [
-            'succes' => true,
-            'data' => $siswa,
-            'message' => 'berhasil'
-        ];
+        
     }
 
     /**
@@ -94,23 +85,7 @@ class SiswaController extends Controller
      */
     public function update(Request $request, $id)
     {
-         {
-        {
-        $siswa = Siswa :: findOrFail ($id);
-        $siswa->siswa =$request->siswa;
-        $siswa->guru = $request->guru;
-        $siswa->wali_kelas = $request->wali_kelas;
-        $siswa->kepala_sekolah = $request->kepala_sekolah;
-        $siswa->save();
-        $response = [
-            'succes' => true,
-            'data' => $siswa,
-            'message' => 'berhasil'
-        ];
-        return response()->json($response, 200);
-        }
-
-    }
+        
     }
 
     /**
@@ -121,13 +96,12 @@ class SiswaController extends Controller
      */
     public function destroy($id)
     {
-         $siswa = Siswa :: findOrFail ($id)->delete();
-         $response = [
-              'succes' => true,
-            'data' => $siswa,
-            'message' => 'berhasil'
+          $siswa = Siswa::find($id)->delete($id);
+        $response = [
+            'success' => true,
+            'data' =>  $siswa,
+            'message' => 'Berhasil dihapus.'
         ];
         return response()->json($response, 200);
-         
-    }
+}
 }

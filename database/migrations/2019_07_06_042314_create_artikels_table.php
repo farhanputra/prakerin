@@ -14,14 +14,13 @@ class CreateArtikelsTable extends Migration
     public function up()
     {
         Schema::create('artikels', function (Blueprint $table) {
-            $table->increments('id');
-             $table->string('judul');
+            $table->bigIncrements('id');
+            $table->String('judul');
+            $table->String('slug');
             $table->text('konten');
-            $table->string('foto');
-             $table->string('slug');
-             $table->integer('kategori_id')->usigned();
-
-             $table->foreign('kategori_id')->references('id')->on('kategoris');
+            $table->String('foto');
+            $table->unsignedBigInteger('id_user');
+            $table->unsignedBigInteger('id_kategori');
             $table->timestamps();
         });
     }
