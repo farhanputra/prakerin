@@ -18,10 +18,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::group(['middleware' => 'cors'], function ( ) { 
-    
-Route::get('/siswa', 'Api/SiswaController');
-Route::get('/sekolah', 'Api/ControllerSekolah');
-Route::get('/artikel', 'Api/ArtikelController');
+
+Route::get('/siswa', 'SiswaController');
+Route::get('/sekolah', 'ControllerSekolah');
+Route::get('/artikel', 'ArtikelController');
 });
 
 
