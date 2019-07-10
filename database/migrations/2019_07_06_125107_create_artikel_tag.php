@@ -14,12 +14,12 @@ class CreateArtikelTag extends Migration
     public function up()
     {
         Schema::create('artikel_tags', function (Blueprint $table) {
-            $table->increment('id');
+            $table->increments('id');
             $table->unsignedInteger('artikel_id');
             $table->unsignedInteger('tag_id');
-
+            
             $table->foreign('artikel_id')->references('id')->on('artikels')->onDelete('CASCADE');
-            $table->foreign('tag_id')->references('id')->on('artikels')->onDelete('CASCADE');
+            $table->foreign('tag_id')->references('id')->on('tags')->onDelete('CASCADE');
         });
     }
 

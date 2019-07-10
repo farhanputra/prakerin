@@ -3,18 +3,19 @@
 @section('content')
 <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-12">
+            <div class="col-md-8">
                 <div class="card">
                     <center>
-                        <div class="card-header">Tambah Tag</div>
+                        <div class="card-header">Tambah Kategori</div>
                     </center>
     
                     <div class="card-body">
-                        <form action="{{route('tag.store')}}" method="post">
+                        <form action="{{route('kategori.update', $kategori->id)}}" method="post">
+                            <input type="hidden" name="_method" value="PATCH">
                             {{csrf_field()}}
                             <div class="form-group">
-                                <label for="">Nama Tag</label>
-                                <input class="form-control" type="text" name="nama_tag" id="">
+                                <label for="">Nama</label>
+                                <input class="form-control" type="text" name="nama_kategori" id="" value="{{$kategori->nama_kategori}}">
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-outline-info">

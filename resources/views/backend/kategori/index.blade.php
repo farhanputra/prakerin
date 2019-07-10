@@ -3,11 +3,11 @@
 @section('content')
 <section class="page-content container-fluid">
     <div class="row">
-        <div class="col-12">
+        <div class="col-8">
             <div class="card">
-                <h5 class="card-header">Data Tables Tag</h5><br>
+                <h5>Data Tables Kategori</h5><br>
                 <center>
-                        <a href="{{ route('tag.create') }}"
+                        <a href="{{ route('kategori.create') }}"
                             class="la la-cloud-upload btn btn-info btn-rounded btn-floating btn-outline">&nbsp;Tambah Data
                         </a>
                 </center>
@@ -15,26 +15,26 @@
                     <table id="bs4-table" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
-                                <th>Nama Tag</th>
+                                <th>Nama Kategori</th>
                                 <th>Slug</th>
                                 <th style="text-align: center;">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($tag as $data)
+                            @foreach ($kategori as $data)
                             <tr>
-                                <td>{{$data->nama_tag}}</td>
+                                <td>{{$data->nama_kategori}}</td>
                                 <td>{{$data->slug}}</td>
                                
 								<td style="text-align: center;">
-                                    <form action="{{route('tag.destroy', $data->id)}}" method="post">
+                                    <form action="{{route('kategori.destroy', $data->id)}}" method="post">
                                         {{csrf_field()}}
-									<a href="{{route('tag.edit', $data->id)}}"
+									<a href="{{route('kategori.edit', $data->id)}}"
 										class="zmdi zmdi-edit btn btn-warning btn-rounded btn-floating btn-outline"> Edit
 									</a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										<input type="hidden" name="_method" value="DELETE">
-										<button type="submit" class="zmdi zmdi-delete  btn-rounded btn-floating btn btn-dangerbtn btn-danger btn-outline"> Delete</button>
+										<button type="submit" class="zmdi zmdi-delete btn-rounded btn-floating btn btn-dangerbtn btn-danger btn-outline"> Delete</button>
 									</form>
 								</td>
                             </tr>

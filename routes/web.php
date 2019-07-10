@@ -10,7 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('index');
 });
@@ -22,7 +21,6 @@ Route::get('/admin', function () {
 });
 Route::get('/blog', function () {
     return view('blog');
-
 });
 Route::get('/single', function () {
     return view('single');
@@ -30,19 +28,23 @@ Route::get('/single', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-
+Route::get('/siswa', function () {
+    return view('siswa');
+});
+Route::get('/backend/artikel', function () {
+    return view('backend/artikel/index');
+});
+Route::get('/backend/tag', function () {
+    return view('backend/tag/index');
+});
+Route::get('/backend/kategori', function () {
+    return view('backend/kategori/index');
+});
 Route::get('/siswa', function () {
     return view('siswa');
 });
 Auth::routes();
-
-
 Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::resource('artikel','ArtikelController');
-Route::resource('kategori','KategoriController');
-route::resource('tag','TagController');
+Route::resource('artikel', 'ArtikelController');
+Route::resource('tag', 'TagController');
+Route::resource('kategori', 'KategoriController');
