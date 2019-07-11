@@ -11,22 +11,22 @@
 |
 */
 Route::get('/', function () {
-    return view('index');
+    return view('layouts/index');
 });
 Route::get('/about', function () {
-    return view('about');
+    return view('layouts/about');
 });
 Route::get('/admin', function () {
     return view('welcome');
 });
 Route::get('/blog', function () {
-    return view('blog');
+    return view('layouts/blog');
 });
 Route::get('/single', function () {
-    return view('single');
+    return view('layouts/single');
 });
 Route::get('/contact', function () {
-    return view('contact');
+    return view('layouts/contact');
 });
 Route::get('/siswa', function () {
     return view('siswa');
@@ -49,5 +49,5 @@ Route::resource('artikel', 'ArtikelController');
 Route::resource('tag', 'TagController');
 Route::resource('kategori', 'KategoriController');
  Route::resource('/produk', 'ProdukController');
- Route::resource('/ajax/kategori', 'KategoriAjax');
- Route::resource('/ajax/tag', 'TagAjax');   
+ Route::resource('/api/kategori', 'KategoriAjax');
+ Route::resource('/api/tag', 'TagAjax');   
