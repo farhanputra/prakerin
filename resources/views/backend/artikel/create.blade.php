@@ -3,14 +3,14 @@
         <title>Tambah artikel</title>
                             <div class="container">
                                 <form action="{{route('artikel.store')}}" method="post" enctype="multipart/form-data">
-                                    @csrf
+                                    
                                     <div class="form-group">
                                         <label for="">Judul</label>
                                         <input type="text" name="judul" id="" class="form-control" aria-describedby="helpId">
                                     </div>
                                      <div class="form-group">
               <label for="">Konten</label>
-              <textarea name="konten" id="ckeditor" cols="30" rows="5" class="form-control ckeditor"></textarea>
+              <textarea name="konten" cols="30" rows="5" class="form-control ckeditor"></textarea>
             </div>
                                    <div class="form-group">
               <label for="">Foto</label>
@@ -34,7 +34,6 @@
                          </select>
                               </div>                                  
                                        <button type="submit" name="Simpan"class="btn btn-outline-success">Simpan</button>
-            <a name="" id="" class="btn btn-outline-secondary" href="{{route('artikel.index')}}" role="button">Kembali</a>
         </form>
     </div>
 @endsection

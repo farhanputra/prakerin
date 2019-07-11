@@ -1,6 +1,6 @@
 @extends('layouts.app')
-
 @section('content')
+
 <section class="page-content container-fluid">
     <div class="row">
         <div class="col-12">
@@ -8,8 +8,10 @@
                 <h5 class="card-header">Data Tables Artikel</h5><br>
                 <center>
                         <a href="{{ route('artikel.create') }}"
-                            class="la la-cloud-upload btn btn-info btn-rounded btn-floating btn-outline">&nbsp;Tambah Data
+                            class="la la-cloud-upload btn btn-info btn-rounded btn-floating btn-outline">
+                        Tambah Data
                         </a>
+                          <br>
                 </center>
                 <div class="card-body">
                     <table id="bs4-table" class="table table-striped table-bordered" style="width:100%">
@@ -50,8 +52,6 @@
                             @endforeach
                         </tbody>
                     </table>
-
-
                 </div>
             </div>
         </div>

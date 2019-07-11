@@ -38,6 +38,9 @@
                     </a><a class="navbar-brand" href="{{ url('/tag') }}">
                         Tag
                     </a>
+                     </a><a class="navbar-brand" href="{{ url('/produk') }}">
+                        Produk
+                    </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -83,5 +86,9 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="/assets/backend/ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('texteditor');
+    </script>
 </body>
 </html>
