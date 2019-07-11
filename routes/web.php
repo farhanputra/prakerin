@@ -50,4 +50,4 @@ Route::resource('tag', 'TagController');
 Route::resource('kategori', 'KategoriController');
  Route::resource('/produk', 'ProdukController');
  Route::resource('/ajax/kategori', 'KategoriAjax');
- Route::resource('/ajax/tag', 'TagAjax');
+ Route::resource('/ajax/tag', 'TagAjax');   
