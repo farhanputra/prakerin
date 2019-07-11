@@ -68,4 +68,10 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
-}
+
+ 
+    Public function showRegistrationForm()
+{
+    return view('errors.404');
+    }
+ }
