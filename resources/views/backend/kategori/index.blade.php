@@ -3,9 +3,9 @@
 @section('content')
 <section class="page-content container-fluid">
     <div class="row">
-        <div class="col-8">
+        <div class="col-12">
             <div class="card">
-                <h5>Data Tables Kategori</h5><br>
+                <h5 class="card-header">Data Tables Kategori</h5><br>
                 <center>
                         <a href="{{ route('kategori.create') }}"
                             class="la la-cloud-upload btn btn-info btn-rounded btn-floating btn-outline">&nbsp;Tambah Data

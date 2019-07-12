@@ -9,15 +9,15 @@
                         <div class="card-header">Edit Tag</div>
                     </center>
     
-                    <div class="card-body">
+                    <div class="container">
                         <form action="{{route('tag.update', $tag->id)}}" method="post">
                             <input type="hidden" name="_method" value="PATCH">
                             {{csrf_field()}}
-                            <div class="form-group">
+                            <div class="container">
                                 <label for="">Nama Tag</label>
                                 <input class="form-control" type="text" name="nama_tag" id="" value="{{$tag->nama_tag}}">
                             </div>
-                            <div class="form-group">
+                            <div class="container">
                                 <button type="submit" class="btn btn-outline-info">
                                     Simpan Data
                                 </button>

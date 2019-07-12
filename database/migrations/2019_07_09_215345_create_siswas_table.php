@@ -13,7 +13,7 @@ class CreateSiswasTable extends Migration
     {
         Schema::create('siswas', function (Blueprint $table) {
             $table->increments('id');
-            $table->string("nama")->nullable();
+            $table->string('nama')->nullable();
             $table->timestamps();
         });
     }

@@ -31,7 +31,7 @@
                     <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
-                    <a class="navbar-brand" href="{{ url('artikel') }}">
+                    <a class="navbar-brand" href="{{ url('/artikel') }}">
                         Artikel
                     </a><a class="navbar-brand" href="{{ url('/kategori') }}">
                         Kategori

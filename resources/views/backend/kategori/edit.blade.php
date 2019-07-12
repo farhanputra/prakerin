@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+
 @section('content')
 <div class="container">
         <div class="row justify-content-center">
@@ -9,15 +10,15 @@
                         <div class="card-header">Tambah Kategori</div>
                     </center>
     
-                    <div class="card-body">
+                    <div class="container">
                         <form action="{{route('kategori.update', $kategori->id)}}" method="post">
                             <input type="hidden" name="_method" value="PATCH">
                             {{csrf_field()}}
-                            <div class="form-group">
+                            <div class="container">
                                 <label for="">Nama</label>
                                 <input class="form-control" type="text" name="nama_kategori" id="" value="{{$kategori->nama_kategori}}">
                             </div>
-                            <div class="form-group">
+                            <div class="container">
                                 <button type="submit" class="btn btn-outline-info">
                                     Simpan Data
                                 </button>
