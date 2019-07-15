@@ -2,31 +2,20 @@
 
 
 @section('content')
+		
 <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <center>
-                        <div class="card-header">Tambah Kategori</div>
-                    </center>
-    
-                    <div class="container">
-                        <form action="{{route('kategori.update', $kategori->id)}}" method="post">
-                            <input type="hidden" name="_method" value="PATCH">
-                            {{csrf_field()}}
-                            <div class="container">
-                                <label for="">Nama</label>
-                                <input class="form-control" type="text" name="nama_kategori" id="" value="{{$kategori->nama_kategori}}">
-                            </div>
-                            <div class="container">
-                                <button type="submit" class="btn btn-outline-info">
-                                    Simpan Data
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+    <div class="row">
+        <div class="col-lg-11">
+        <form action="{{ route('kategori.update', $kategori->id) }}" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="_method" value="PATCH">
+            @csrf
+            <div class="form-group">
+              <label for="">Nama Kategori</label>
+              <input type="text" name="nama_kategori" id="" class="form-control" value="{{ $kategori->nama_kategori }}" >
             </div>
+            <button type="submit" class="btn btn-md btn-info">Simpan</button>
+            <a name="" id="" class="btn btn-md btn-warning" href="{{route('kategori.index')}}" role="button">Kembali</a>
+        </form>
         </div>
-    </div>
-@endsection
+    </div>              
+</div>

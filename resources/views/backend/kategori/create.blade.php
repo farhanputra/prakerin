@@ -2,29 +2,21 @@
 
 @section('content')
 <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12">
-                <div class="card">
-                    <center>
-                        <div class="card-header">Tambah Kategori</div>
-                    </center>
-    
-                    <div class="card-body">
-                        <form action="{{route('kategori.store')}}" method="post">
-                            {{csrf_field()}}
-                            <div class="form-group">
-                                <label for="">Nama</label>
-                                <input class="form-control" type="text" name="nama_kategori" id="">
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-outline-info">
-                                    Simpan Data
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+    <div class="row">
+        <div class="col-lg-11">
+            <form action="{{ route('kategori.store') }}" method="post" enctype="multipart/form-data">
+                @csrf
+                <div class="form-group">
+                    <label for="">Nama Kategori</label>
+                    <input type="text" name="nama_kategori" id="" class="form-control" required>
                 </div>
-            </div>
+                    <button type="submit" class="btn btn-md btn-info">Simpan</button>
+                    <a name="" id="" class="btn btn-md btn-warning" href="{{route('kategori.index')}}" role="button">Kembali</a>
+            </form>
         </div>
-    </div>
-@endsection
+    </div>              
+</div>
+			</div><!--/.col-->
+			<div class="col-sm-12">
+				<p class="back-link">Lumino Theme by <a href="https://www.medialoot.com">Medialoot</a></p>
+			</div>
